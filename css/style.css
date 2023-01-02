@@ -1,0 +1,496 @@
+/* 
+-----------------
+Template Name : ROOXROO Website
+Author : Rifat Bhuiya
+Author E-mail : rifatbhuiya.personal@gmail.com 
+Version : 01.00
+-----------------
+
+-----------------
+Table of content
+-----------------
+0. Common Css Start
+1. Header Area Css Start
+2. Hero Area Css Start
+3. Wrapper Area Css Start
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+a,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #31363f;
+    background-color: #f9fafb;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading-gradient-color {
+    color: #000;
+    background: #000;
+    background-color: #000;
+    background-image: radial-gradient(circle,#C700BF 0, #00FFE0 27%, #000 27%);
+    background-position: 100% 100%;
+    background-size: 150%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bg-move 10s 0s infinite forwards;
+    -webkit-animation: bg-move 10s 0s infinite forwards;
+}
+
+@keyframes bg-move {
+    0% {
+        background-size: 350%;
+        background-position: left 100% bottom 0;
+    }
+
+    50% {
+        background-size: 350%;
+        background-position: left -10% bottom 0;
+    }
+
+    100% {
+        background-size: 350%;
+        background-position: left 100% bottom 0;
+    }
+    
+}
+
+.gradient-color {
+    background: -webkit-linear-gradient(#C700BF , #00FFE0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 
+    -----------------
+    Common Css End |
+    ----------------- 
+*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #fdfdfd;
+    box-shadow: .5px .5px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+header .myLogo img {
+    width: 200px;
+}
+
+header .myUl li a {
+    text-transform: capitalize;
+    font: 600 18px/1.55 'Poppins', sans-serif;
+}
+
+header .myUl li a:hover,
+header .myUl li .active {
+    color: #000 !important;
+}
+
+header .header-action {
+    margin-left: 24px;
+}
+
+header .header-action ul {
+    display: inline-flex;
+    gap: 8px;
+}
+
+header .header-action ul li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: capitalize;
+    padding: 4px 16px;
+    border: 2px solid #38b2ac;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    z-index: 1;
+    color: #31363f;
+    font: 500 18px/1.55 'Poppins', sans-serif;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.header-action ul li a:hover {
+    color: #fdfdfd;
+}
+
+.header-action ul li a i {
+    font-size: 16px;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transition: all ease .1s;
+    -webkit-transition: all ease .1s;
+    -moz-transition: all ease .1s;
+    -ms-transition: all ease .1s;
+    -o-transition: all ease .1s;
+}
+
+.header-action ul li a:hover i {
+    transform: translateX(4px);
+    -webkit-transform: translateX(4px);
+    -moz-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    -o-transform: translateX(4px);
+}
+
+header .header-action ul li a::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(30deg);
+    -webkit-transform: translate(-50%, -50%) rotate(30deg);
+    -moz-transform: translate(-50%, -50%) rotate(30deg);
+    -ms-transform: translate(-50%, -50%) rotate(30deg);
+    -o-transform: translate(-50%, -50%) rotate(30deg);
+    background: #38b2ac;
+    display: block;
+    z-index: -1;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.header-action ul li a:hover::before {
+    width: 105%;
+}
+
+.header-action ul li .sign-up {
+    color: #fdfdfd;
+}
+
+.header-action ul li .sign-up:hover {
+    color: #31363f;
+}
+
+.header-action ul li .sign-up::before {
+    width: 105%;
+}
+
+.header-action ul li .sign-up:hover::before {
+    width: 0;
+}
+
+/* 
+    -----------------
+    Header Area Css End |
+    ----------------- 
+*/
+
+#hero-area {
+    padding: 160px 0 80px;
+    background-image: linear-gradient(120deg, rgba(132, 250, 175, 0.3) 0%, rgba(143, 210, 244, 0.3) 100%);
+}
+
+.hero-area-content h1 {
+    letter-spacing: -1px;
+    font: 900 65px/1.1 'Poppins', sans-serif;
+}
+
+.hero-area-content p {
+    margin-top: 12px;
+    font: 400 18px/1.3 'Poppins', sans-serif;
+}
+
+.hero-area-content .hero-form {
+    margin-top: 20px;
+}
+
+.hero-area-input {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    border-width: 4px;
+    border-style: solid;
+    background-color: #fdfdfd;
+    animation: border-bg linear 2s infinite;
+    -webkit-animation: border-bg linear 2s infinite;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+@keyframes border-bg {
+    0% {
+        border-image: linear-gradient(45deg, rgba(199, 0, 192, 0.5) , rgba(0, 255, 225, 0.5)) 1;
+    }
+
+    40% {
+        border-image: linear-gradient(180deg, rgba(199, 0, 192, 0.5) , rgba(0, 255, 225, 0.5)) 1;
+    }
+
+    75% {
+        border-image: linear-gradient(360deg, rgba(199, 0, 192, 0.5) , rgba(0, 255, 225, 0.5)) 1;
+    }
+
+    100% {
+        border-image: linear-gradient(45deg, rgba(199, 0, 192, 0.5) , rgba(0, 255, 225, 0.5)) 1;
+    }
+}
+
+.hero-area-input:hover {
+    animation-play-state: paused;
+}
+
+.hero-area-input .brand-name {
+    color: #000;
+    font: 700 18px/1.5 'Poppins', sans-serif;
+    width: 10%;
+    padding-left: 8px;
+}
+
+.hero-area-input .input {
+    width: 60%;
+}
+
+.hero-area-input input {
+    height: 40px;
+    border: none;
+    font: 600 18px/1.5 'Poppins', sans-serif;
+    background-color: #fdfdfd;
+}
+
+.hero-area-input input::placeholder {
+    font: 600 18px/1.5 'Poppins', sans-serif;
+}
+
+.hero-area-input .hero-btn {
+    width: 30%;
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.hero-area-input .hero-btn a {
+    width: 100%;
+}
+
+.hero-area-input .hero-btn button {
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    color: #fdfdfd;
+    font: 500 18px/1.3 'Poppins', sans-serif;
+    background-color:  #38b2ac;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.hero-area-input .hero-btn button:hover {
+    color: #000;
+    background-color: rgba(56, 178, 172, 0.7);
+}
+
+.hero-area-input .hero-btn button i {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transition: all ease .1s;
+    -webkit-transition: all ease .1s;
+    -moz-transition: all ease .1s;
+    -ms-transition: all ease .1s;
+    -o-transition: all ease .1s;
+}
+
+.hero-area-input .hero-btn button:hover i {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.heroArea-action {
+    margin-top: 40px;
+}
+
+.heroArea-action ul li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: capitalize;
+    padding: 4px 16px;
+    border: 2px solid #31363f;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    z-index: 1;
+    color: #fdfdfd;
+    font: 500 18px/1.55 'Poppins', sans-serif;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.heroArea-action ul li a:hover {
+    color: #000;
+}
+
+.heroArea-action ul li a i {
+    font-size: 16px;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transition: all ease .1s;
+    -webkit-transition: all ease .1s;
+    -moz-transition: all ease .1s;
+    -ms-transition: all ease .1s;
+    -o-transition: all ease .1s;
+}
+
+.heroArea-action ul li a:hover i {
+    transform: translateX(4px);
+    -webkit-transform: translateX(4px);
+    -moz-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    -o-transform: translateX(4px);
+}
+
+.heroArea-action ul li a::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    width: 105%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+    -webkit-transform: translate(-50%, -50%) rotate(20deg);
+    -moz-transform: translate(-50%, -50%) rotate(20deg);
+    -ms-transform: translate(-50%, -50%) rotate(20deg);
+    -o-transform: translate(-50%, -50%) rotate(20deg);
+    background: #31363f;
+    display: block;
+    z-index: -1;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.heroArea-action ul li a:hover::before {
+    width: 0;
+}
+
+.hero-area-img img {
+    animation: move-img ease 2s infinite;
+    -webkit-animation: move-img ease 2s infinite;
+}
+
+
+@keyframes move-img {
+    0% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+
+}
+
+/* 
+    -----------------
+    Hero Area Css End |
+    ----------------- 
+*/
+
+
+
+/* 
+    -----------------
+    Wrapper Area Css End |
+    ----------------- 
+*/
