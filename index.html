@@ -38,8 +38,8 @@
 </head>
 <body>
     <!-- Header Area Start -->
-    <header>
-        <nav class="navbar navbar-expand-md">
+    <header id="navbar">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
               <a class="navbar-brand myLogo" href="./index.html">
                 <img src="images/logo.png" class="img-fluid" alt="logo"/>
@@ -56,7 +56,7 @@
                     <a class="nav-link" href="#">Pricing</a>
                   </li>  
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link scroll-link" href="#service">Services</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://frital.com/tools">Tools</a>
@@ -83,6 +83,84 @@
           </nav>
     </header>
     <!-- Header Area End -->
+
+    <!-- Mobile-menu Area Start -->
+    <header id="mobile-menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="images/logo.png" class="img-fluid" alt="logo"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="header-action">
+                        <ul>
+                            <li>
+                                <a href="https://frital.com/login">
+                                    <span>sign in</span>
+                                    <span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sign-up" href="https://frital.com/register">
+                                    <span>sign up</span>
+                                    <span><i class="fa-solid fa-plus"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="tab-bar">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#myMobile-menu" aria-controls="myMobile-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                            </svg>
+                        </button>
+                        <div class="offcanvas offcanvas-start can-body" data-bs-scroll="true" tabindex="-1" id="myMobile-menu" aria-labelledby="myMobile-menuLabel">
+                            <div class="offcanvas-header">
+                                <button type="button" class="c-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="offcanvas-body c-body">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            about us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            pricing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="scroll-link" href="#service">
+                                            services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://frital.com/tools">
+                                            tools
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile-menu Area End -->
 
     <!-- Hero Area Start -->
     <main id="hero-area">
@@ -132,15 +210,514 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="hero-area-img">
-                        <img src="images/hero-area-img.png" class="w-100" alt="img-fluid">
+                        <img src="images/hero-area-img.png" class="w-100 img-fluid" alt="app-img"/>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <!-- Hero Area End -->
-    
-    
+
+    <!-- Backtotop Area Start -->
+    <div class="backtotop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- Backtotop Area End -->
+
+    <!-- Customer Area Start -->
+    <section id="customer" class="section-ways-gap">
+        <div class="background-shape">
+            <img src="images/round-shappe.png" class="img-fluid" alt="round-shappe"/>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8 text-center">
+                    <div class="section-heading">
+                        <h3 class="heading-gradient-color">
+                            Worlds popular creators loves Frital
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="customerSlide section-content-gap">
+                <div class="customer-content">
+                    <div class="customer-inner">
+                        <div class="img">
+                            <img src="images/customer/1.jpg" class="img-fluid" alt="customer-img"/>
+                        </div>
+                        <h5>
+                            <span>Smina Aur</span>
+                            <span><i class="bi bi-patch-check-fill"></i></span>
+                        </h5>
+                        <p>project driector</p>
+                    </div>
+                </div>
+                <div class="customer-content">
+                    <div class="customer-inner">
+                        <div class="img">
+                            <img src="images/customer/2.jpg" class="img-fluid" alt="customer-img"/>
+                        </div>
+                        <h5>
+                            <span>Arun khan</span>
+                            <span><i class="bi bi-patch-check-fill"></i></span>
+                        </h5>
+                        <p>project driector</p>
+                    </div>
+                </div>
+                <div class="customer-content">
+                    <div class="customer-inner">
+                        <div class="img">
+                            <img src="images/customer/3.jpg" class="img-fluid" alt="customer-img"/>
+                        </div>
+                        <h5>
+                            <span>yeamini</span>
+                            <span><i class="bi bi-patch-check-fill"></i></span>
+                        </h5>
+                        <p>project driector</p>
+                    </div>
+                </div>
+                <div class="customer-content">
+                    <div class="customer-inner">
+                        <div class="img">
+                            <img src="images/customer/4.jpg" class="img-fluid" alt="customer-img"/>
+                        </div>
+                        <h5>
+                            <span>suresh khan</span>
+                            <span><i class="bi bi-patch-check-fill"></i></span>
+                        </h5>
+                        <p>project driector</p>
+                    </div>
+                </div>
+                <div class="customer-content">
+                    <div class="customer-inner">
+                        <div class="img">
+                            <img src="images/customer/5.jpg" class="img-fluid" alt="customer-img"/>
+                        </div>
+                        <h5>
+                            <span>monalisha</span>
+                            <span><i class="bi bi-patch-check-fill"></i></span>
+                        </h5>
+                        <p>project driector</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Customer Area End -->
+
+    <!-- Service Area Start -->
+    <section id="service" class="section-ways-gap">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="section-heading text-center">
+                        <h3 class="heading-gradient-color">
+                            Our Services
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceSlide section-content-gap">
+                <div class="col-lg-4">
+                    <div class="ser-contnet">
+                        <div class="img">
+                            <img src="images/service/1.jpg" class="w-100 img-fluid" alt="ser-img"/>
+                        </div>
+                        <div class="text">
+                            <h5>Bio link pages</h5>
+                            <p>
+                                Create your own unique & highly customizable bio link page with ease.
+                            </p>
+                            <div class="ser-list">
+                                <ul>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Custom colors & branding</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Multiple ready-to-use components</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>SEO settings</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Password protection, sensitive content warning</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ser-action">
+                            <a href="https://frital.com/register">
+                                <span>join frital</span>
+                                <span><i class="fa-solid fa-plus"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ser-contnet">
+                        <div class="img">
+                            <img src="images/service/2.jpg" class="w-100 img-fluid" alt="ser-img"/>
+                        </div>
+                        <div class="text">
+                            <h5>Shortened links</h5>
+                            <p>
+                                Yes! You can use our service as a shortener as well.
+                            </p>
+                            <div class="ser-list">
+                                <ul>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Scheduling & expiration limits</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Country, device & language targeting</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>A/B Rotation</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Password protection, sensitive content warning</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ser-action">
+                            <a href="https://frital.com/register">
+                                <span>join frital</span>
+                                <span><i class="fa-solid fa-plus"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ser-contnet">
+                        <div class="img">
+                            <img src="images/service/3.jpg" class="w-100 img-fluid" alt="ser-img"/>
+                        </div>
+                        <div class="text">
+                            <h5>QR Codes</h5>
+                            <p>
+                                Fully featured QR code generator system with easy to use templates.
+                            </p>
+                            <div class="ser-list">
+                                <ul>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Custom colors with gradients</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Custom logo</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Vcard, WiFi, Calendar, Location..etc templates</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ser-action">
+                            <a href="https://frital.com/register">
+                                <span>join frital</span>
+                                <span><i class="fa-solid fa-plus"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ser-contnet">
+                        <div class="img">
+                            <img src="images/service/4.jpg" class="w-100 img-fluid" alt="ser-img"/>
+                        </div>
+                        <div class="text">
+                            <h5>Built-in analytics</h5>
+                            <p>
+                                Analytics for all your links. GDPR, CCPA and PECR compliant.
+                            </p>
+                            <div class="ser-list">
+                                <ul>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Countries & cities</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Referrers & UTMs</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Devices & operating systems</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="bi bi-check-circle-fill"></i></span>
+                                        <span>Browsers, Languages</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ser-action">
+                            <a href="https://frital.com/register">
+                                <span>join frital</span>
+                                <span><i class="fa-solid fa-plus"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-content-gap center">
+                <div class="col-lg-4 col-md-7 col-sm-7 col-10">
+                    <div class="inner-service">
+                        <div class="icon">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+                        <div class="text">
+                            <h6>
+                                Tools
+                            </h6>
+                            <p>
+                                We are also offering you a set of 140 amount of useful web tools as a bonus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-7 col-10 md-gap">
+                    <div class="inner-service">
+                        <div class="icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="text">
+                            <h6>
+                                Custom domains
+                            </h6>
+                            <p>
+                                Connect your own domain or use our predefined ones.
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-4 col-md-7 col-sm-7 col-10 md-gap">
+                    <div class="inner-service">
+                        <div class="icon">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <div class="text">
+                            <h6>
+                                Projects
+                            </h6>
+                            <p>
+                                Easiest way to categorize your managed resources.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Area End -->
+
+    <!-- Data-counter Area Start -->
+    <section id="data">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="data-content">
+                        <div class="count-num">
+                            <span class="counter">50</span>
+                            <span>+</span>
+                        </div>
+                        <h5>total links</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="data-content">
+                        <div class="count-num">
+                            <span class="counter">16</span>
+                            <span>+</span>
+                        </div>
+                        <h5>qr codes</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 md-gap">
+                    <div class="data-content">
+                        <div class="count-num">
+                            <span class="counter">234</span>
+                            <span>+</span>
+                        </div>
+                        <h5>tracked pageviews</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 md-gap">
+                    <div class="data-content">
+                        <div class="count-num">
+                            <span class="counter">6000</span>
+                            <span>+</span>
+                        </div>
+                        <h5>frital user</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Data-counter Area End -->
+
+    <!-- Tracking Area Start -->
+    <section id="tracking" class="section-ways-gap">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="links">
+                        <span class="fb" data-bs-toggle="tooltip" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </span>
+                        <span class="ig" data-bs-toggle="tooltip" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                        <span class="tw" data-bs-toggle="tooltip" title="Twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        <span class="ga" data-bs-toggle="tooltip" title="Google Analytics">
+                            <i class="fa-brands fa-google"></i>
+                        </span>
+                        <span class="gm" data-bs-toggle="tooltip" title="Google Tag Manager">
+                            <i class="fa-brands fa-google"></i>
+                        </span>
+                    </div>
+                    <div class="links snd-link">
+                        <span class="ld" data-bs-toggle="tooltip" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+                        <span class="ttk" data-bs-toggle="tooltip" title="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </span>
+                        <span class="qur" data-bs-toggle="tooltip" title="Quora">
+                            <i class="fa-brands fa-quora"></i>
+                        </span>
+                        <span class="sp" data-bs-toggle="tooltip" title="Snapchat">
+                            <i class="fa-brands fa-snapchat"></i>
+                        </span>
+                        <span class="pt" data-bs-toggle="tooltip" title="Pinterest">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="tracking-action">
+                        <h5>Tracking pixels</h5>
+                        <p>
+                            All the links easily integrate with any of the following pixel providers.
+                        </p>
+                        <div class="tr-btn">
+                            <a href="https://frital.com/register">
+                                <span>join frital</span>
+                                <span><i class="fa-solid fa-plus"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Tracking Area End -->
+
+    <!-- Footer Area Start -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-3">
+                    <div class="footer-logo">
+                        <a href="./index.html">
+                            <img src="images/footer-logo.png" class="img-fluid" alt="footer loto"/>
+                        </a>
+                        <p class="copyright">
+                            Copyright &copy; 2023 <a href="https://frital.com/register">Frital</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="footer-links">
+                        <ul>
+                            <li>
+                                <a href="https://frital.com/blog">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://frital.com/affiliate">
+                                    Affiliate
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Terms of Service
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://frital.com/contact">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="social-links">
+                        <ul>
+                            <li>
+                                <a data-bs-toggle="tooltip" title="YouTube" href="https://youtube.com/frital">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tooltip" title="Facebook" href="https://facebook.com/frital">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tooltip" title="Twitter" href="https://twitter.com/frital">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tooltip" title="Instagram" href="https://instagram.com/frital">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tooltip" title="LinkedIn" href="https://linkedin.com/frital">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tooltip" title="WhatsApp" href="https://wa.me/+918433771399">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>
+                            <a href="mailto:anmol@frital.com">
+                                support@frital.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!-- Bootstrap 5.2 -->
@@ -150,6 +727,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Slick -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Counter Js -->
 
     <script src="js/script.js"></script>
     <!-- Main Script Sheet -->
